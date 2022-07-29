@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" type="text/css" href="signupcss.css" />
+</head>
+
+<body class="body">
+
+
+  <div class="login-page">
+    <div class="form">
+      <form>
+
+        <input type="text" placeholder="full name" />
+        <input type="email" placeholder="email address" id="mail" />
+        <input type="text" placeholder="pick a username" />
+        <input type="password" id="password" placeholder="set a password" />
+
+        <br>
+        <br>
+      </form>
+      <script>
+
+        function clicksub() {
+          
+
+          window.alert("you sucessfully signedup");
+          window.location.href = 'questionhtml.html';
+
+        };
+      </script>
+
+      <form class="login-form">
+
+        <button type="button" onclick="clicksub()">
+          SIGN UP
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+<script>
+  function show() {
+    var password = document.getElementById("password");
+    var icon = document.querySelector(".fas");
+
+    // ========== Checking type of password ===========
+    if (password.type === "password") {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
+  }
+</script>
+
+</html>
+
+</html>\
